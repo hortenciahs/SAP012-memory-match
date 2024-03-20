@@ -1,0 +1,47 @@
+body {
+    background-color: #AFF4C6
+  }
+
+h1 {
+    text-align: center;
+    font-family: "raleway";
+    font-weight: 100;
+    margin-top: 50px;
+}
+.todosbotoes {
+    max-width: 360px;
+    text-align: center;
+}
+.box {
+    position: fixed;
+    top: 0;
+    transform: rotate(80deg); 
+    left: 0;
+  }
+.wave {
+    position: relative;
+    opacity: .4;
+    width: 1500px;
+    height: 1300px;
+    margin-left: -150px;
+    margin-top: -250px;
+    border-radius: 43%;
+  }
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    from {transform: rotate(360deg);}
+  }
+  
+.wave.-one {
+    animation: rotate 10000ms infinite linear;
+    opacity: 30%;
+    background: white;
+  }
+  
+.wave.-two {
+    animation: rotate 6000ms infinite linear;
+    opacity: 20%;
+    background: white;
+  }
+  

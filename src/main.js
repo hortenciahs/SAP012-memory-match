@@ -1,3 +1,5 @@
 import App from './components/App.js';
+import data from "../data/artistasdados/artistas.js";
 
-document.getElementById('root').appendChild(App());
+data.items.forEach((item) => document.getElementById('root').appendChild(App(item)));
+

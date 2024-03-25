@@ -14,16 +14,21 @@ const App = (item) => {
   front.innerHTML = ` <img src='${item.image}'>
   ` 
 
-card.className = 'card';
-front.className = 'face front';
-back.className = 'face back';
-
 card.appendChild(front);
 card.appendChild(back);
-
 grid.appendChild(card);
 
 
   return card;
+}
+const duplicateData = [...data.items, ...data.items];
+const shuffleArray = (items) => {
+  for (let i = items.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [items[i], items[j]] = [items[j], items[i]];
+  }
+  return items;
 };
+
+
 export default App;

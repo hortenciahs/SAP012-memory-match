@@ -6,16 +6,17 @@ body {
   .grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 15px;
-    width: 100%;
+    gap: 30px;
+    width: 200%;
     max-width: 1200px;
     margin: 0 auto;
   }
   
   .card {
+    height: 150px;
     aspect-ratio: 3/7;
     width: 100%;
-    border-radius: 0px;
+    border-radius: 10px;
     position: relative;
     transition: all 400ms ease;
     transform-style: preserve-3d;
@@ -24,25 +25,30 @@ body {
   
 
   .face {
-    width: 100%;
-    height: 100%;
+    height: 400%;
     position: absolute;
     background-size: cover;
     background-position: center;
-    border: 5px #ffb6aa;
-    border-radius: 0px;
+    border: 70px #ffb6aa;
+    border-radius: 10px;
     transition: all 400ms ease;
   }
   
 .front img {
     background-color: #ffb6aa ;
-    height: 30px;
+    height: 150px;
+    border-radius: 10px;
+    width: 150px;
 
   }
 
 .back {
    background-color: antiquewhite ; 
    backface-visibility: hidden;
+    height: 150px;
+    border-radius: 10px;
+    width: 150px;
+
 }
 
  h1 {
